@@ -1,0 +1,2305 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+
+    <!-- ==========================================
+         CONFIGURAÇÕES INICIAIS
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="author" content="Araujo Systems">
+
+    <title>PortoTec | Soluções Tecnológicas</title>
+
+    <meta name="description"
+          content="PortoTec Soluções Tecnológicas. Computadores, notebooks, impressoras, redes, servidores, CFTV e periféricos. Tecnologia, qualidade e atendimento especializado.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="keywords"
+          content="PortoTec, soluções tecnológicas, computadores, notebooks, servidores, impressoras, informática, CFTV, redes, periféricos">
+
+    <link rel="canonical"
+          href="https://portotecrj.com.br/">
+
+    <!-- Compartilhamento -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+          content="PortoTec | Soluções Tecnológicas">
+
+    <meta property="og:description"
+          content="Tecnologia para conectar você às melhores soluções. Conheça a PortoTec.">
+
+    <meta property="og:url"
+          content="https://portotecrj.com.br/">
+
+    <meta property="og:locale" content="pt_BR">
+
+    <meta property="og:image"
+          content="https://portotecrj.com.br/assets/img/portotec-logo.png">
+
+    <!-- Favicon oficial -->
+
+    <link rel="icon"
+          type="image/png"
+          href="assets/img/portotec-favicon.png">
+
+    <link rel="apple-touch-icon"
+          href="assets/img/portotec-favicon.png">
+
+    <!-- Fontes -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Preferência de tema: aplicar antes da página aparecer -->
+
+    <script>
+        (function () {
+
+            let savedTheme = null;
+
+            try {
+                savedTheme = localStorage.getItem(
+                    "portotec-theme"
+                );
+            } catch (error) {
+                savedTheme = null;
+            }
+
+            const systemDark = window.matchMedia(
+                "(prefers-color-scheme: dark)"
+            ).matches;
+
+            const theme = (
+                savedTheme === "light" ||
+                savedTheme === "dark"
+            )
+                ? savedTheme
+                : (systemDark ? "dark" : "light");
+
+            document.documentElement.setAttribute(
+                "data-theme",
+                theme
+            );
+
+        })();
+    </script>
+
+    <!-- Exibição correta das variantes da logo -->
+
+    <style>
+        .brand__logo {
+            display: inline-flex;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        .brand__logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo-theme-dark {
+            display: none !important;
+        }
+
+        html[data-theme="dark"] .logo-theme-light {
+            display: none !important;
+        }
+
+        html[data-theme="dark"] .logo-theme-dark {
+            display: block !important;
+        }
+
+        .theme-toggle__icon--sun {
+            display: none;
+        }
+
+        html[data-theme="dark"] .theme-toggle__icon--moon {
+            display: none;
+        }
+
+        html[data-theme="dark"] .theme-toggle__icon--sun {
+            display: inline-flex;
+        }
+    </style>
+
+    <!-- Biblioteca de ícones -->
+
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+        defer>
+    </script>
+
+    <!-- JavaScript do site -->
+
+    <script src="js/script.js" defer></script>
+
+</head>
+
+
+<body>
+
+    <!-- Acessibilidade -->
+
+    <a href="#conteudo"
+       class="skip-link">
+        Ir para o conteúdo principal
+    </a>
+
+
+    <!-- ==========================================
+         01. BARRA SUPERIOR
+    =========================================== -->
+
+    <div class="topbar">
+
+        <div class="container topbar__content">
+
+            <div class="topbar__left">
+
+                <span class="topbar__location">
+
+                    <i data-lucide="map-pin"></i>
+
+                    Duque de Caxias - RJ
+
+                </span>
+
+                <a href="mailto:comercial@portotecrj.com.br">
+
+                    <i data-lucide="mail"></i>
+
+                    comercial@portotecrj.com.br
+
+                </a>
+
+            </div>
+
+            <div class="topbar__right">
+
+                <a href="tel:+5521995928425">
+
+                    <i data-lucide="phone"></i>
+
+                    (21) 99592-8425
+
+                </a>
+
+                <a href="https://www.instagram.com/portotecrj/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram oficial da PortoTec">
+
+                    <i data-lucide="instagram"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         02. CABEÇALHO
+    =========================================== -->
+
+    <header class="header" id="header">
+
+        <div class="container header__content">
+
+            <!-- Logotipo oficial -->
+
+            <a href="#inicio"
+               class="brand brand--header"
+               aria-label="PortoTec - Página inicial">
+
+                <span class="brand__logo">
+
+                    <img
+                        src="assets/img/portotec-logo-compacta.png"
+                        alt="PortoTec Soluções Tecnológicas"
+                        class="logo-theme-light"
+                        width="278"
+                        height="45"
+                        fetchpriority="high">
+
+                    <img
+                        src="assets/img/portotec-logo-branca.png"
+                        alt=""
+                        class="logo-theme-dark"
+                        width="479"
+                        height="74">
+
+                </span>
+
+            </a>
+
+
+            <!-- Navegação principal -->
+
+            <nav class="nav"
+                 id="mainNav"
+                 aria-label="Navegação principal">
+
+                <ul class="nav__list">
+
+                    <li>
+                        <a href="#inicio"
+                           class="nav__link active">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#empresa"
+                           class="nav__link">
+                            Empresa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos"
+                           class="nav__link">
+                            Produtos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#solucoes"
+                           class="nav__link">
+                            Soluções
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#loja"
+                           class="nav__link">
+                            Loja
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contato"
+                           class="nav__link">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Ações do cabeçalho -->
+
+            <div class="header__actions">
+
+                <!-- Alternar modo claro/escuro -->
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Alternar tema claro e escuro"
+                    aria-pressed="false"
+                    title="Alternar tema">
+
+                    <span class="theme-toggle__icon theme-toggle__icon--moon">
+                        <i data-lucide="moon"></i>
+                    </span>
+
+                    <span class="theme-toggle__icon theme-toggle__icon--sun">
+                        <i data-lucide="sun"></i>
+                    </span>
+
+                    <span class="theme-toggle__label"
+                          id="themeLabel">
+                        Modo escuro
+                    </span>
+
+                </button>
+
+
+                <!-- Orçamento -->
+
+                <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
+                   class="btn btn--primary header__cta"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Solicitar cotação
+
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+
+                <!-- Menu mobile -->
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+
+                    <i data-lucide="menu"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main id="conteudo">
+
+
+        <!-- ======================================
+             03. HERO PRINCIPAL
+        ======================================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero__background">
+
+                <div class="hero__grid-pattern"></div>
+
+                <div class="hero__glow hero__glow--one"></div>
+
+                <div class="hero__glow hero__glow--two"></div>
+
+            </div>
+
+
+            <div class="container hero__content">
+
+                <!-- Texto principal -->
+
+                <div class="hero__text">
+
+                    <div class="hero__eyebrow">
+
+                        <span class="status-dot"></span>
+
+                        SOLUÇÕES TECNOLÓGICAS PARA VOCÊ
+
+                    </div>
+
+                    <h1>
+
+                        Tecnologia que
+                        conecta.
+
+                        <span>
+                            Soluções que
+                            transformam.
+                        </span>
+
+                    </h1>
+
+                    <p class="hero__description">
+
+                        A solução tecnológica ideal começa
+                        com a escolha certa.
+
+                        Conte com qualidade, experiência
+                        e atendimento personalizado para
+                        encontrar os produtos que você
+                        e sua empresa precisam.
+
+                    </p>
+
+
+                    <div class="hero__actions">
+
+                        <a href="#produtos"
+                           class="btn btn--primary btn--large">
+
+                            Explorar produtos
+
+                            <i data-lucide="arrow-right"></i>
+
+                        </a>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%2C%20PortoTec%21%20Gostaria%20de%20falar%20com%20um%20consultor."
+                           class="btn btn--outline btn--large"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <i data-lucide="message-circle"></i>
+
+                            Falar com consultor
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero__highlights">
+
+                        <div class="hero__highlight">
+
+                            <i data-lucide="shield-check"></i>
+
+                            Qualidade e confiança
+
+                        </div>
+
+                        <div class="hero__highlight">
+
+                            <i data-lucide="badge-check"></i>
+
+                            Experiência no mercado
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Visual tecnológico da capa -->
+
+                <div class="hero__visual">
+
+                    <div class="hero__showcase">
+
+                        <div class="showcase__top">
+
+                            <span class="showcase__status">
+                                <span class="status-dot"></span>
+                                TECNOLOGIA EM FOCO
+                            </span>
+
+                            <i data-lucide="more-horizontal"></i>
+
+                        </div>
+
+
+                        <!-- Logo incorporada ao visual -->
+
+                        <div class="showcase__brand">
+
+                            <img
+                                src="assets/img/portotec-logo-branca.png"
+                                alt="PortoTec Soluções Tecnológicas"
+                                class="showcase__logo"
+                                width="479"
+                                height="74">
+
+                            <p>
+                                Tecnologia e inovação
+                                para o seu negócio.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Linhas tecnológicas decorativas -->
+
+                        <div class="showcase__network"
+                             aria-hidden="true">
+
+                            <span class="network-line network-line--one"></span>
+                            <span class="network-line network-line--two"></span>
+                            <span class="network-line network-line--three"></span>
+
+                            <div class="network-node network-node--one">
+                                <i data-lucide="cpu"></i>
+                            </div>
+
+                            <div class="network-node network-node--two">
+                                <i data-lucide="server"></i>
+                            </div>
+
+                            <div class="network-node network-node--three">
+                                <i data-lucide="wifi"></i>
+                            </div>
+
+                            <div class="network-node network-node--four">
+                                <i data-lucide="monitor"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="showcase__bottom">
+
+                            <span>
+                                <i data-lucide="check-circle-2"></i>
+                                Soluções em TI
+                            </span>
+
+                            <span>
+                                <i data-lucide="check-circle-2"></i>
+                                Tecnologia corporativa
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Cards flutuantes -->
+
+                    <div class="hero__floating-card hero__floating-card--top">
+
+                        <div class="floating-card__icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+
+                        <div>
+                            <strong>Confiança</strong>
+                            <span>Nosso compromisso</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero__floating-card hero__floating-card--bottom">
+
+                        <div class="floating-card__icon">
+                            <i data-lucide="cpu"></i>
+                        </div>
+
+                        <div>
+                            <strong>Tecnologia</strong>
+                            <span>Para cada necessidade</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a href="#indicadores"
+               class="hero__scroll">
+
+                <span>Conheça mais</span>
+
+                <i data-lucide="arrow-down"></i>
+
+            </a>
+
+        </section>
+
+
+        <!-- ======================================
+             04. INDICADORES DE CONFIANÇA
+        ======================================= -->
+
+        <section class="trust-bar" id="indicadores">
+
+            <div class="container trust-bar__content">
+
+                <div class="trust-item" data-reveal>
+
+                    <i data-lucide="award"></i>
+
+                    <div>
+
+                        <strong>Mais de 10 anos</strong>
+
+                        <span>De experiência no mercado</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trust-item" data-reveal>
+
+                    <i data-lucide="truck"></i>
+
+                    <div>
+
+                        <strong>Todo o Brasil</strong>
+
+                        <span>Envio de produtos</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trust-item" data-reveal>
+
+                    <i data-lucide="headset"></i>
+
+                    <div>
+
+                        <strong>Atendimento dedicado</strong>
+
+                        <span>Soluções para sua necessidade</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             05. PRODUTOS
+        ======================================= -->
+
+        <section class="section products" id="produtos">
+
+            <div class="container">
+
+                <div class="section-heading section-heading--center"
+                     data-reveal>
+
+                    <span class="section-label">
+                        NOSSO PORTFÓLIO
+                    </span>
+
+                    <h2>
+
+                        Tecnologia para
+                        todas as necessidades.
+
+                    </h2>
+
+                    <p>
+
+                        Um portfólio de produtos tecnológicos
+                        para atender diferentes demandas,
+                        do uso cotidiano às necessidades
+                        de infraestrutura empresarial.
+
+                    </p>
+
+                </div>
+
+
+                <div class="products__grid">
+
+
+                    <!-- Computadores -->
+
+                    <article class="product-card" data-reveal>
+
+                        <span class="product-card__number">01</span>
+
+                        <div class="product-card__icon">
+                            <i data-lucide="laptop"></i>
+                        </div>
+
+                        <h3>Computadores e Notebooks</h3>
+
+                        <p>
+
+                            Equipamentos para produtividade,
+                            desempenho e as necessidades
+                            do seu dia a dia.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20computadores%20e%20notebooks."
+                           class="product-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Solicitar cotação
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- Impressoras -->
+
+                    <article class="product-card" data-reveal>
+
+                        <span class="product-card__number">02</span>
+
+                        <div class="product-card__icon">
+                            <i data-lucide="printer"></i>
+                        </div>
+
+                        <h3>Impressoras</h3>
+
+                        <p>
+
+                            Soluções de impressão para
+                            ambientes domésticos,
+                            comerciais e corporativos.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20impressoras."
+                           class="product-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Solicitar cotação
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- Redes -->
+
+                    <article class="product-card" data-reveal>
+
+                        <span class="product-card__number">03</span>
+
+                        <div class="product-card__icon">
+                            <i data-lucide="network"></i>
+                        </div>
+
+                        <h3>Redes e Conectividade</h3>
+
+                        <p>
+
+                            Equipamentos para conexão,
+                            comunicação e infraestrutura
+                            de redes.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20equipamentos%20de%20rede."
+                           class="product-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Solicitar cotação
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- Servidores -->
+
+                    <article class="product-card" data-reveal>
+
+                        <span class="product-card__number">04</span>
+
+                        <div class="product-card__icon">
+                            <i data-lucide="server"></i>
+                        </div>
+
+                        <h3>Servidores</h3>
+
+                        <p>
+
+                            Equipamentos e soluções
+                            de infraestrutura para
+                            ambientes corporativos.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20servidores."
+                           class="product-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Solicitar cotação
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- CFTV -->
+
+                    <article class="product-card" data-reveal>
+
+                        <span class="product-card__number">05</span>
+
+                        <div class="product-card__icon">
+                            <i data-lucide="cctv"></i>
+                        </div>
+
+                        <h3>CFTV e Segurança</h3>
+
+                        <p>
+
+                            Produtos de monitoramento,
+                            vigilância e segurança
+                            eletrônica.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20produtos%20CFTV."
+                           class="product-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Solicitar cotação
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+
+                    <!-- Periféricos -->
+
+                    <article class="product-card" data-reveal>
+
+                        <span class="product-card__number">06</span>
+
+                        <div class="product-card__icon">
+                            <i data-lucide="mouse"></i>
+                        </div>
+
+                        <h3>Periféricos e Acessórios</h3>
+
+                        <p>
+
+                            Dispositivos e acessórios
+                            para complementar sua
+                            estrutura tecnológica.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20perif%C3%A9ricos."
+                           class="product-card__link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Solicitar cotação
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+
+                <div class="products__bottom" data-reveal>
+
+                    <p>
+                        Precisa de um produto específico?
+                    </p>
+
+                    <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Preciso%20de%20um%20produto%20espec%C3%ADfico%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o."
+                       class="btn btn--secondary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        Consulte nossa equipe
+
+                        <i data-lucide="arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             06. APRESENTAÇÃO DA EMPRESA
+        ======================================= -->
+
+        <section class="section about" id="empresa">
+
+            <div class="container about__grid">
+
+                <!-- Identidade visual corporativa -->
+
+                <div class="about__visual" data-reveal>
+
+                    <div class="about__graphic">
+
+                        <div class="about__graphic-decoration"></div>
+
+                        <div class="about__graphic-content">
+
+                            <img
+                                src="assets/img/portotec-logo-branca.png"
+                                alt="PortoTec Soluções Tecnológicas"
+                                class="about__logo"
+                                width="479"
+                                height="74"
+                                loading="lazy">
+
+                            <div class="about__graphic-divider"></div>
+
+                            <p>
+                                Conhecimento, compromisso
+                                e soluções tecnológicas.
+                            </p>
+
+                        </div>
+
+                        <div class="about__graphic-line"></div>
+
+                    </div>
+
+
+                    <div class="about__experience">
+
+                        <strong>10+</strong>
+
+                        <span>
+                            Anos de atuação
+                            no mercado
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Conteúdo institucional -->
+
+                <div class="about__content" data-reveal>
+
+                    <span class="section-label">
+                        SOBRE NÓS
+                    </span>
+
+                    <h2>
+
+                        Experiência que gera
+                        confiança.
+
+                        <span>
+                            Tecnologia que gera resultados.
+                        </span>
+
+                    </h2>
+
+                    <p>
+
+                        Com mais de dez anos de atuação,
+                        a PortoTec trabalha para conectar
+                        seus clientes aos principais
+                        produtos do mercado tecnológico,
+                        aliando qualidade, preços
+                        competitivos e atendimento
+                        comprometido.
+
+                    </p>
+
+                    <p>
+
+                        Acreditamos que um serviço de
+                        excelência nasce da sintonia
+                        entre pessoas, processos
+                        e conhecimento técnico.
+
+                        É com essa visão que construímos
+                        nossas relações e buscamos
+                        oferecer a solução adequada
+                        a cada necessidade.
+
+                    </p>
+
+
+                    <div class="about__features">
+
+                        <div>
+
+                            <i data-lucide="check-circle-2"></i>
+
+                            <span>
+                                Compromisso com o cliente
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <i data-lucide="check-circle-2"></i>
+
+                            <span>
+                                Qualidade e transparência
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <i data-lucide="check-circle-2"></i>
+
+                            <span>
+                                Atendimento personalizado
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#contato"
+                       class="btn btn--primary">
+
+                        Conheça nosso atendimento
+
+                        <i data-lucide="arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             07. MISSÃO, VISÃO E VALORES
+        ======================================= -->
+
+        <section class="section principles">
+
+            <div class="container">
+
+                <div class="section-heading section-heading--center"
+                     data-reveal>
+
+                    <span class="section-label">
+                        NOSSA ESSÊNCIA
+                    </span>
+
+                    <h2>
+                        Compromissos que nos movem.
+                    </h2>
+
+                    <p>
+                        Princípios que orientam nossa forma
+                        de trabalhar e de nos relacionar
+                        com cada cliente.
+                    </p>
+
+                </div>
+
+
+                <div class="principles__grid">
+
+                    <article class="principle-card" data-reveal>
+
+                        <div class="principle-card__icon">
+                            <i data-lucide="target"></i>
+                        </div>
+
+                        <h3>Missão</h3>
+
+                        <p>
+
+                            Atender cada cliente com
+                            excelência, buscando oferecer
+                            produtos e soluções que
+                            proporcionem satisfação.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="principle-card" data-reveal>
+
+                        <div class="principle-card__icon">
+                            <i data-lucide="eye"></i>
+                        </div>
+
+                        <h3>Visão</h3>
+
+                        <p>
+
+                            Ser referência para nossos
+                            clientes como distribuidora
+                            de produtos e prestadora
+                            de serviços tecnológicos.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="principle-card" data-reveal>
+
+                        <div class="principle-card__icon">
+                            <i data-lucide="heart-handshake"></i>
+                        </div>
+
+                        <h3>Valores</h3>
+
+                        <p>
+
+                            Ética, respeito, qualidade,
+                            transparência e comprometimento
+                            em cada relacionamento.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             08. SOLUÇÕES E DIFERENCIAIS
+        ======================================= -->
+
+        <section class="section advantages" id="solucoes">
+
+            <div class="container">
+
+                <div class="section-heading section-heading--center"
+                     data-reveal>
+
+                    <span class="section-label">
+                        NOSSO DIFERENCIAL
+                    </span>
+
+                    <h2>
+
+                        Sua necessidade.
+                        Nosso compromisso.
+
+                    </h2>
+
+                    <p>
+
+                        Mais do que fornecer produtos,
+                        buscamos construir relações
+                        de confiança e oferecer uma
+                        experiência eficiente.
+
+                    </p>
+
+                </div>
+
+
+                <div class="advantages__grid">
+
+                    <article class="advantage-item" data-reveal>
+
+                        <div class="advantage-item__icon">
+                            <i data-lucide="badge-check"></i>
+                        </div>
+
+                        <h3>Qualidade</h3>
+
+                        <p>
+
+                            Produtos de marcas reconhecidas
+                            no mercado tecnológico.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="advantage-item" data-reveal>
+
+                        <div class="advantage-item__icon">
+                            <i data-lucide="wallet"></i>
+                        </div>
+
+                        <h3>Preços competitivos</h3>
+
+                        <p>
+
+                            Soluções com foco em qualidade
+                            e custo-benefício.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="advantage-item" data-reveal>
+
+                        <div class="advantage-item__icon">
+                            <i data-lucide="truck"></i>
+                        </div>
+
+                        <h3>Alcance nacional</h3>
+
+                        <p>
+
+                            Atendimento a clientes
+                            em diferentes regiões
+                            do Brasil.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="advantage-item" data-reveal>
+
+                        <div class="advantage-item__icon">
+                            <i data-lucide="headset"></i>
+                        </div>
+
+                        <h3>Atendimento humano</h3>
+
+                        <p>
+
+                            Uma equipe pronta para ouvir,
+                            orientar e compreender
+                            sua necessidade.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             09. CHAMADA COMERCIAL
+        ======================================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box" data-reveal>
+
+                    <div class="cta-box__decoration"></div>
+
+                    <!-- Marca como elemento de fundo -->
+
+                    <div class="cta-box__watermark"
+                         aria-hidden="true">
+
+                        <img
+                            src="assets/img/portotec-logo-branca.png"
+                            alt=""
+                            loading="lazy">
+
+                    </div>
+
+
+                    <div class="cta-box__content">
+
+                        <span class="cta-box__label">
+
+                            PODE CONTAR COM A GENTE
+
+                        </span>
+
+                        <h2>
+
+                            Tá difícil?
+
+                            <span>
+                                A gente resolve!
+                            </span>
+
+                        </h2>
+
+                        <p>
+
+                            Não importa qual seja sua
+                            necessidade tecnológica.
+
+                            Nossa equipe está pronta
+                            para conversar e ajudar
+                            você a encontrar a
+                            melhor alternativa.
+
+                        </p>
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Preciso%20de%20uma%20solu%C3%A7%C3%A3o%20tecnol%C3%B3gica%20e%20gostaria%20de%20atendimento."
+                           class="btn btn--white btn--large"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Fale com nossos consultores
+
+                            <i data-lucide="arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             10. LOJA
+        ======================================= -->
+
+        <section class="section store" id="loja">
+
+            <div class="container store__grid">
+
+                <div class="store__content" data-reveal>
+
+                    <span class="section-label">
+                        PORTOTEC STORE
+                    </span>
+
+                    <h2>
+
+                        A tecnologia que você procura
+                        está mais perto do que imagina.
+
+                    </h2>
+
+                    <p>
+
+                        Encontre equipamentos e soluções
+                        para suas necessidades.
+
+                        Consulte nossa equipe para
+                        verificar produtos, disponibilidade
+                        e solicitar um orçamento.
+
+                    </p>
+
+                    <div class="store__actions">
+
+                        <a href="https://wa.me/5521995928425?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20os%20produtos%20da%20PortoTec."
+                           class="btn btn--primary"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            Consultar produtos
+
+                            <i data-lucide="arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="store__visual" data-reveal>
+
+                    <div class="store__illustration">
+
+                        <img
+                            src="assets/img/portotec-logo-branca.png"
+                            alt="PortoTec Soluções Tecnológicas"
+                            class="store__logo"
+                            width="479"
+                            height="74"
+                            loading="lazy">
+
+                        <div class="store__illustration-divider"></div>
+
+                        <p>
+                            Equipamentos e soluções
+                            para o seu dia a dia.
+                        </p>
+
+
+                        <div class="store__illustration-products"
+                             aria-hidden="true">
+
+                            <div>
+                                <i data-lucide="laptop"></i>
+                            </div>
+
+                            <div>
+                                <i data-lucide="server"></i>
+                            </div>
+
+                            <div>
+                                <i data-lucide="printer"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             11. NOVIDADES
+        ======================================= -->
+
+        <section class="section news">
+
+            <div class="container">
+
+                <div class="news__box" data-reveal>
+
+                    <div class="news__icon">
+                        <i data-lucide="radio-tower"></i>
+                    </div>
+
+                    <div class="news__content">
+
+                        <span class="section-label">
+                            PORTOTEC NEWS
+                        </span>
+
+                        <h2>
+                            Fique conectado às novidades.
+                        </h2>
+
+                        <p>
+
+                            Acompanhe nossa presença
+                            nas redes sociais e conheça
+                            mais sobre o universo
+                            da tecnologia.
+
+                        </p>
+
+                    </div>
+
+                    <a href="https://www.instagram.com/portotecrj/"
+                       class="btn btn--primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i data-lucide="instagram"></i>
+
+                        Seguir no Instagram
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             12. CONTATO
+        ======================================= -->
+
+        <section class="section contact" id="contato">
+
+            <div class="container">
+
+                <div class="section-heading section-heading--center"
+                     data-reveal>
+
+                    <span class="section-label">
+                        FALE COM A GENTE
+                    </span>
+
+                    <h2>
+
+                        Vamos encontrar a solução certa
+                        para você?
+
+                    </h2>
+
+                    <p>
+
+                        Nossa equipe está preparada
+                        para receber sua solicitação
+                        e ajudar você a encontrar
+                        o produto adequado.
+
+                    </p>
+
+                </div>
+
+
+                <div class="contact__grid">
+
+                    <!-- Contatos oficiais -->
+
+                    <div class="contact__info" data-reveal>
+
+                        <h3>
+                            Estamos prontos para atender.
+                        </h3>
+
+                        <p>
+
+                            Entre em contato pelo canal
+                            que preferir ou envie sua
+                            solicitação pelo formulário.
+
+                        </p>
+
+
+                        <div class="contact__details">
+
+
+                            <!-- WhatsApp -->
+
+                            <a href="https://wa.me/5521995928425"
+                               class="contact-detail"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <div class="contact-detail__icon">
+                                    <i data-lucide="message-circle"></i>
+                                </div>
+
+                                <div>
+                                    <span>WhatsApp / Telefone</span>
+                                    <strong>(21) 99592-8425</strong>
+                                </div>
+
+                            </a>
+
+
+                            <!-- Comercial -->
+
+                            <a href="mailto:comercial@portotecrj.com.br"
+                               class="contact-detail">
+
+                                <div class="contact-detail__icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+
+                                <div>
+
+                                    <span>E-mail comercial</span>
+
+                                    <strong>
+                                        comercial@portotecrj.com.br
+                                    </strong>
+
+                                </div>
+
+                            </a>
+
+
+                            <!-- Contato -->
+
+                            <a href="mailto:contato@portotecrj.com.br"
+                               class="contact-detail">
+
+                                <div class="contact-detail__icon">
+                                    <i data-lucide="at-sign"></i>
+                                </div>
+
+                                <div>
+
+                                    <span>E-mail de contato</span>
+
+                                    <strong>
+                                        contato@portotecrj.com.br
+                                    </strong>
+
+                                </div>
+
+                            </a>
+
+
+                            <!-- Localização -->
+
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Almirante+Grenfall+290+Duque+de+Caxias+RJ"
+                               class="contact-detail"
+                               target="_blank"
+                               rel="noopener noreferrer">
+
+                                <div class="contact-detail__icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+
+                                <div>
+
+                                    <span>Localização</span>
+
+                                    <strong>
+                                        Rua Almirante Grenfall, 290
+                                    </strong>
+
+                                    <small>
+                                        Duque de Caxias - RJ
+                                        CEP 25085-290
+                                    </small>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact__social">
+
+                            <span>
+                                Acompanhe nossas redes
+                            </span>
+
+                            <a href="https://www.instagram.com/portotecrj/"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               aria-label="Instagram da PortoTec">
+
+                                <i data-lucide="instagram"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Formulário -->
+
+                    <div class="contact__form-wrapper" data-reveal>
+
+                        <form id="contactForm" class="contact-form">
+
+                            <div class="contact-form__header">
+
+                                <h3>
+                                    Solicite uma cotação
+                                </h3>
+
+                                <p>
+
+                                    Preencha as informações
+                                    para conversar com
+                                    nossa equipe pelo WhatsApp.
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="nome">
+                                        Nome completo *
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="nome"
+                                        name="nome"
+                                        placeholder="Seu nome completo"
+                                        autocomplete="name"
+                                        maxlength="120"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="empresa">
+                                        Empresa
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="empresa"
+                                        name="empresa"
+                                        placeholder="Nome da empresa"
+                                        maxlength="120">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="email">
+                                        E-mail *
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="seuemail@exemplo.com"
+                                        autocomplete="email"
+                                        maxlength="180"
+                                        required>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="telefone">
+                                        Telefone / WhatsApp *
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefone"
+                                        name="telefone"
+                                        placeholder="(21) 99999-9999"
+                                        autocomplete="tel"
+                                        maxlength="15"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="assunto">
+                                    Assunto *
+                                </label>
+
+                                <select
+                                    id="assunto"
+                                    name="assunto"
+                                    required>
+
+                                    <option value="" disabled selected>
+                                        Selecione um assunto
+                                    </option>
+
+                                    <option value="Computadores e Notebooks">
+                                        Computadores e Notebooks
+                                    </option>
+
+                                    <option value="Impressoras">
+                                        Impressoras
+                                    </option>
+
+                                    <option value="Redes">
+                                        Redes
+                                    </option>
+
+                                    <option value="Servidores">
+                                        Servidores
+                                    </option>
+
+                                    <option value="CFTV">
+                                        CFTV
+                                    </option>
+
+                                    <option value="Periféricos">
+                                        Periféricos
+                                    </option>
+
+                                    <option value="Outros">
+                                        Outros assuntos
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="mensagem">
+                                    Mensagem *
+                                </label>
+
+                                <textarea
+                                    id="mensagem"
+                                    name="mensagem"
+                                    rows="5"
+                                    maxlength="2000"
+                                    placeholder="Descreva o produto ou solução que você procura..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="form-checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    id="consentimento"
+                                    name="consentimento"
+                                    required>
+
+                                <label for="consentimento">
+
+                                    Autorizo o uso dos dados
+                                    informados para atendimento
+                                    desta solicitação.
+
+                                </label>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn--primary btn--full"
+                                id="submitContact">
+
+                                Enviar pelo WhatsApp
+
+                                <i data-lucide="send"></i>
+
+                            </button>
+
+
+                            <p
+                                class="form-feedback"
+                                id="formFeedback"
+                                role="status"
+                                aria-live="polite"></p>
+
+
+                            <p class="contact-form__notice">
+
+                                Você será direcionado
+                                ao WhatsApp para revisar
+                                e confirmar a mensagem.
+
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         13. RODAPÉ
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__main">
+
+
+                <!-- Logo e descrição -->
+
+                <div class="footer__brand">
+
+                    <a href="#inicio"
+                       class="brand brand--footer"
+                       aria-label="PortoTec - Voltar ao início">
+
+                        <span class="brand__logo">
+
+                            <img
+                                src="assets/img/portotec-logo-branca.png"
+                                alt="PortoTec Soluções Tecnológicas"
+                                width="479"
+                                height="74"
+                                loading="lazy">
+
+                        </span>
+
+                    </a>
+
+                    <p>
+
+                        Tecnologia, experiência e compromisso
+                        para oferecer soluções de qualidade
+                        a você e sua empresa.
+
+                    </p>
+
+
+                    <div class="footer__social">
+
+                        <a href="https://www.instagram.com/portotecrj/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Instagram da PortoTec">
+
+                            <i data-lucide="instagram"></i>
+
+                        </a>
+
+
+                        <a href="https://wa.me/5521995928425"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="WhatsApp da PortoTec">
+
+                            <i data-lucide="message-circle"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Navegação -->
+
+                <div class="footer__column">
+
+                    <h4>Navegação</h4>
+
+                    <ul>
+
+                        <li><a href="#inicio">Início</a></li>
+
+                        <li><a href="#empresa">Empresa</a></li>
+
+                        <li><a href="#produtos">Produtos</a></li>
+
+                        <li><a href="#solucoes">Soluções</a></li>
+
+                        <li><a href="#loja">Loja</a></li>
+
+                        <li><a href="#contato">Contato</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Produtos -->
+
+                <div class="footer__column">
+
+                    <h4>Produtos</h4>
+
+                    <ul>
+
+                        <li>
+                            <a href="#produtos">
+                                Computadores e Notebooks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#produtos">
+                                Impressoras
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#produtos">
+                                Redes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#produtos">
+                                Servidores
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#produtos">
+                                CFTV
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#produtos">
+                                Periféricos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contato -->
+
+                <div class="footer__column footer__contact">
+
+                    <h4>Fale conosco</h4>
+
+                    <a href="tel:+5521995928425">
+
+                        <i data-lucide="phone"></i>
+
+                        (21) 99592-8425
+
+                    </a>
+
+
+                    <a href="mailto:comercial@portotecrj.com.br">
+
+                        <i data-lucide="mail"></i>
+
+                        comercial@portotecrj.com.br
+
+                    </a>
+
+
+                    <a href="mailto:contato@portotecrj.com.br">
+
+                        <i data-lucide="at-sign"></i>
+
+                        contato@portotecrj.com.br
+
+                    </a>
+
+
+                    <p>
+
+                        <i data-lucide="map-pin"></i>
+
+                        Rua Almirante Grenfall, 290
+                        Duque de Caxias - RJ
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Copyright e assinatura -->
+
+            <div class="footer__bottom">
+
+                <p class="footer__copyright">
+
+                    &copy;
+
+                    <span id="currentYear">2026</span>
+
+                    PortoTec Soluções Tecnológicas.
+                    Todos os direitos reservados.
+
+                </p>
+
+
+                <!-- Divulgação Araujo Systems -->
+
+                <p class="footer__developer">
+
+                    Desenvolvido por
+
+                    <a href="https://wa.me/5521988758922?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20cria%C3%A7%C3%A3o%20de%20sites%20e%20os%20servi%C3%A7os%20da%20Araujo%20Systems."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       title="Conheça os serviços da Araujo Systems">
+
+                        Araujo Systems
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==========================================
+         14. WHATSAPP FLUTUANTE
+    =========================================== -->
+
+    <a href="https://wa.me/5521995928425?text=Ol%C3%A1%2C%20PortoTec%21%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento."
+       class="whatsapp-float"
+       id="whatsappFloat"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Falar pelo WhatsApp">
+
+        <i data-lucide="message-circle"></i>
+
+        <span class="whatsapp-float__tooltip">
+            Precisa de ajuda?
+        </span>
+
+    </a>
+
+
+    <!-- ==========================================
+         15. VOLTAR AO TOPO
+    =========================================== -->
+
+    <button
+        type="button"
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Voltar ao topo">
+
+        <i data-lucide="arrow-up"></i>
+
+    </button>
+
+
+    <!-- ==========================================
+         16. CONTROLE DE TEMA
+         Complemento funcional do HTML.
+         O CSS definirá os estilos dark/light.
+    =========================================== -->
+
+    <script>
+
+        (function () {
+
+            const root = document.documentElement;
+
+            const themeToggle = document.getElementById(
+                "themeToggle"
+            );
+
+            const themeLabel = document.getElementById(
+                "themeLabel"
+            );
+
+            const themeColor = document.querySelector(
+                'meta[name="theme-color"]'
+            );
+
+
+            function applyTheme(theme) {
+
+                const isDark = theme === "dark";
+
+                root.setAttribute(
+                    "data-theme",
+                    isDark ? "dark" : "light"
+                );
+
+                if (themeToggle) {
+
+                    themeToggle.setAttribute(
+                        "aria-pressed",
+                        String(isDark)
+                    );
+
+                    themeToggle.setAttribute(
+                        "aria-label",
+                        isDark
+                            ? "Ativar modo claro"
+                            : "Ativar modo escuro"
+                    );
+
+                    themeToggle.title = isDark
+                        ? "Ativar modo claro"
+                        : "Ativar modo escuro";
+
+                }
+
+                if (themeLabel) {
+
+                    themeLabel.textContent = isDark
+                        ? "Modo claro"
+                        : "Modo escuro";
+
+                }
+
+                if (themeColor) {
+
+                    themeColor.setAttribute(
+                        "content",
+                        isDark ? "#08152d" : "#ffffff"
+                    );
+
+                }
+
+            }
+
+
+            if (themeToggle) {
+
+                themeToggle.addEventListener(
+                    "click",
+                    function () {
+
+                        const currentTheme = root.getAttribute(
+                            "data-theme"
+                        );
+
+                        const nextTheme = currentTheme === "dark"
+                            ? "light"
+                            : "dark";
+
+                        applyTheme(nextTheme);
+
+                        try {
+
+                            localStorage.setItem(
+                                "portotec-theme",
+                                nextTheme
+                            );
+
+                        } catch (error) {
+
+                            /* O tema continua funcionando,
+                               mesmo sem armazenamento. */
+
+                        }
+
+                    }
+                );
+
+            }
+
+
+            applyTheme(
+                root.getAttribute("data-theme")
+            );
+
+        })();
+
+    </script>
+
+</body>
+</html>
